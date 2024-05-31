@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="13" viewBox="0 0 23 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #032F9B;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="btn-icn_neji.svg" class="cls-1" d="M2867,4025l-2-3h3l2,3h-3Zm-5,0-2-3h3l2,3h-3Zm-5,0-2-3h3l2,3h-3Zm-7,0v5h-3v-13h3v5h3l2,3h-5Z" transform="translate(-2847 -4017)"/>
+</svg>

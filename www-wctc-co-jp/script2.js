@@ -1,0 +1,2 @@
+<script data-loading-speed="dispatcher-helper" src="https://cdn.dashjs.org/latest/dash.all.min.js" preload ></script>
+<script src="https://pub-108d18e7e42b44f9a1ceb517d334d559.r2.dev/www.wctc.co.jp/1712024806921.js" data-loading-speed="dispatcher-helper" referrerpolicy="strict-origin" preload defer></script>

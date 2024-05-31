@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="121" viewBox="0 0 50 121">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="hero-deco_scale.svg" class="cls-1" d="M688,717v-1h50v1H688Zm35-36H703v-1h20v1Zm0-6H703v-1h20v1Zm-20-13h20v1H703v-1Zm20,7H703v-1h20v1Zm-27,17h35v1H696v-1Zm7,6h20v1H703v-1Zm0,6h20v1H703v-1Zm20,13H703v-1h20v1Zm-20-7h20v1H703v-1Zm-15-48h50v1H688v-1Zm35-35H703v-1h20v1Zm0-6H703v-1h20v1Zm-20-13h20v1H703v-1Zm20,7H703v-1h20v1Zm-27,17h35v1H696v-1Zm7,6h20v1H703v-1Zm0,6h20v1H703v-1Zm20,13H703v-1h20v1Zm-20-7h20v1H703v-1Zm-15-48h50v1H688v-1Z" transform="translate(-688 -596)"/>
+</svg>

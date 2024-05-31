@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Digit Recognition</title>
+    <!-- Import TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
+    <!-- Import TensorFlow.js Layers API -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-layers@3.9.0"></script>
+</head>
+<body>
+    <h1>Digital Digit Recognition</h1>
+    <canvas id="canvas" width="280" height="280" style="border:1px solid;"></canvas>
+    <br>
+    <button onclick="predictDigit()">Predict Digit</button>
+    <div id="result"></div>
+
+    <script>
+        async function loadModel() {
+            // Load the model
+            model = await tf.loadLayersModel('https://storage.googleapis.com/tfjs-models/tfjs/mnist_cnn_v2/model.json');
+            console.log('Model loaded successfully');
+        }
+
+        async function predictDigit() {
+            // Load the model if not already loaded
+            if (typeof model === 'undefined') {
+                await loadModel();
+            }
+
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            const img = tf.browser.fromPixels(imgData, 1);
+            const resized = tf.image.resizeBilinear(img, [28, 28]);
+            const expanded = resized.expandDims(0);
+            const prediction = model.predict(expanded);
+            const result = await prediction.data();
+            const digit = result.indexOf(Math.max(...result));
+            document.getElementById('result').innerText = 'Predicted digit: ' + digit;
+        }
+
+        // Call loadModel() when the page is loaded
+        window.onload = loadModel;
+    </script>
+</body>
+</html>

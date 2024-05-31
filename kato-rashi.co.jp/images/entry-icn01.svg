@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="34" viewBox="0 0 32 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="entry-icn01.svg" class="cls-1" d="M971.376,11437.1a9.05,9.05,0,1,1,9-9.1A9.065,9.065,0,0,1,971.376,11437.1Zm0-16.1a7,7,0,1,0,7.016,7A6.986,6.986,0,0,0,971.376,11421Zm15.006,30h-30.02C956.817,11435,985.906,11434.9,986.382,11451Zm-28.227-1.5H984.59C983.709,11437.4,959.075,11437.4,958.155,11449.5Z" transform="translate(-955.375 -11418)"/>
+</svg>

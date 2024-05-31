@@ -1,0 +1,10 @@
+
+<svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 121 50" >
+<style type="text/css">
+.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#BFC8DD;}
+</style>
+<path  class="hero-deco st0" d="M0,0h1v50H0V0z M36,35V15h1v20H36z M42,35V15h1v20H42z M55,15v20h-1V15H55z M48,35V15
+h1v20H48z M31,8v35h-1V8H31z M25,15v20h-1V15H25z M19,15v20h-1V15H19z M6,35V15h1v20H6z M13,15v20h-1V15H13z M61,0v50h-1V0H61z
+M96,35V15h1v20H96z M102,35V15h1v20H102z M115,15v20h-1V15H115z M108,35V15h1v20H108z M91,8v35h-1V8H91z M85,15v20h-1V15H85z
+M79,15v20h-1V15H79z M66,35V15h1v20H66z M73,15v20h-1V15H73z M121,0v50h-1V0H121z"/>
+</svg>

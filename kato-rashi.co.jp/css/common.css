@@ -1,0 +1,286 @@
+/* ##############################################################################
+
+    COMMON
+
+############################################################################## */
+  html {
+    font-size: 16px;
+  }
+  body {
+    font-family: var(--font-jp),'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', sans-serif, YuGothic, 'Yu Gothic';
+    line-height: 1.8;
+    font-weight: 500;
+    font-feature-settings: "palt";
+    letter-spacing: .08em;
+    *font-size: small;
+    *font: x-small;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+  }
+  ul,
+  ol { list-style: none; }
+  small { font-size: .875rem; /* 14px */ }
+  a,
+  a[href="javascript:void(0);"]:hover {
+    color: #333;
+    text-decoration: none;
+    transition: all .2s ease-out;
+    outline : none;
+  }
+  a[href="javascript:void(0);"],
+  a[href="javascript:void(0);"]::before {
+    color: inherit;
+    cursor: default;
+    opacity: 1;
+    text-decoration: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+  }
+  a:focus {
+    text-decoration: none !important;
+  }
+  img {
+    vertical-align: middle;
+  }
+  address,
+  em,
+  i {
+    font-style: normal;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+  svg {
+    transition: all .4s ease-out;
+  }
+
+  @media screen and (max-width: 767px) {
+    html {
+      font-size: 14px;
+    }
+    body {
+      -webkit-text-size-adjust: none;
+      word-break: break-word;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    small { font-size: .813rem; /* 13px */ }
+  }
+
+/* layout
+**************************************** */
+
+  /* --- float --- */
+  .flt-rgt { float: right; }
+  .flt-lft { float: left; }
+
+  /* --- position --- */
+  .pos_rel {
+    position: relative;
+  }
+  .pos_ab {
+    position: absolute;
+  }
+
+  /* --- margin --- */
+  .mgn-btm8 { margin-bottom: 8px; }
+  .mgn-btm16 { margin-bottom: 16px; }
+  .mgn-btm24 { margin-bottom: 24px; }
+  .mgn-btm32 { margin-bottom: 32px; }
+  .mgn-btm40 { margin-bottom: 40px; }
+  .mgn-btm48 { margin-bottom: 48px; }
+  .mgn-btm56 { margin-bottom: 56px; }
+  .mgn-btm64 { margin-bottom: 64px; }
+  .mgn-btm72 { margin-bottom: 72px; }
+  .mgn-btm80 { margin-bottom: 80px; }
+
+  /* --- font-size --- */
+  .fz-12 { font-size: .75rem; /* 12px */ }
+  .fz-13 { font-size: .813rem; /* 13px */ }
+  .fz-14 { font-size: .875rem; /* 14px */ }
+  .fz-15 { font-size: .938rem; /* 15px */ }
+  .fz-16 { font-size: 1rem; /* 16px */ }
+  .fz-17 { font-size: 1.063rem; /* 17px */ }
+  .fz-18 { font-size: 1.125rem; /* 18px */ }
+  .fz-20 { font-size: 1.25rem; /* 20px */ }
+  .fz-24 { font-size: 1.5rem; /* 24px */ }
+  .fz-26 { font-size: 1.625rem; /* 26px */ }
+  .fz-28 { font-size: 1.75rem; /* 28px */ }
+  .fz-30 { font-size: 1.875rem; /* 30px */ }
+  .fz-32 { font-size: 2rem; /* 32px */ }
+  .fz-36 { font-size: 2.25rem; /* 36px */ }
+  .fz-40 { font-size: 2.5rem; /* 40px */ }
+  .fz-44 { font-size: 2.75rem; /* 44px */ }
+  .fz-48 { font-size: 3rem; /* 48px */ }
+  .fz-56 { font-size: 3.5rem; /* 56px */ }
+  .fz-64 { font-size: 4rem; /* 64px */ }
+
+  /* --- pc or sp --- */
+  .pc-none,
+  .pc-none-inline,
+  .pc-none-table,
+  .pc-none-flex { display: none; }
+  .sp-none { display: block; }
+  .sp-none-inline { display: inline; }
+  .sp-none-table { display: table; }
+  .sp-none-flex {
+    display: flex;
+  }
+  @media screen and (max-width: 767px) {
+
+    /* --- margin --- */
+    .mgn-btm16 { margin-bottom: 8px; }
+    .mgn-btm24 { margin-bottom: 16px; }
+    .mgn-btm32 { margin-bottom: 16px; }
+    .mgn-btm40 { margin-bottom: 24px; }
+    .mgn-btm48 { margin-bottom: 24px; }
+    .mgn-btm56 { margin-bottom: 32px; }
+    .mgn-btm64 { margin-bottom: 32px; }
+    .mgn-btm72 { margin-bottom: 40px; }
+    .mgn-btm80 { margin-bottom: 40px; }
+
+    /* --- font-size --- */
+    .fz-12 { font-size: .786rem; /* 11px */ }
+    .fz-13 { font-size: .857rem; /* 12px */ }
+    .fz-14 { font-size: .929rem; /* 13px */ }
+    .fz-15 { font-size: 1rem; /* 14px */ }
+    .fz-16 { font-size: 1.071rem; /* 15px */ }
+    .fz-17 { font-size: 1.143rem; /* 16px */ }
+    .fz-18 { font-size: 1.214rem; /* 17px */ }
+    .fz-20 { font-size: 1.286rem; /* 18px */ }
+    .fz-24 { font-size: 1.429rem; /* 20px */ }
+    .fz-26 { font-size: 1.429rem; /* 20px */ }
+    .fz-28 { font-size: 1.714rem; /* 24px */ }
+    .fz-30 { font-size: 1.714rem; /* 24px */ }
+    .fz-32 { font-size: 1.857rem; /* 26px */ }
+    .fz-36 { font-size: 1.857rem; /* 26px */ }
+    .fz-40 { font-size: 2rem; /* 28px */ }
+    .fz-44 { font-size: 2rem; /* 28px */ }
+    .fz-48 { font-size: 2.143rem; /* 30px */ }
+    .fz-56 { font-size: 2.286rem; /* 32px */ }
+    .fz-64 { font-size: 2.571rem; /* 36px */ }
+
+    /* --- pc or sp --- */
+    .sp-none,
+    .sp-none-inline,
+    .sp-none-table,
+    .sp-none-flex { display: none; }
+    .pc-none { display: block; }
+    .pc-none-inline { display: inline; }
+    .pc-none-table { display: table; }
+    .pc-none-flex {
+      display: flex;
+    }
+  }
+
+/* flex
+**************************************** */
+
+  /* --- ブロック要素 --- */
+  .flex {
+    display: flex;
+  }
+
+  /* --- インライン要素 --- */
+  .flex-inline {
+    display: inline-flex;
+  }
+
+  /* --- 逆向き --- */
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
+
+  /* --- 縦並び --- */
+  .flex-column {
+    flex-direction: column;
+  }
+
+  /* --- 水平方向揃え --- */
+  .flex-j-start {
+    justify-content: flex-start;
+  }
+  .flex-j-end {
+    justify-content: flex-end;
+  }
+  .flex-j-ctr {
+    justify-content: center;
+  }
+  .flex-j-between {
+    justify-content: space-between;
+  }
+  .flex-j-around {
+    justify-content: space-around;
+  }
+
+  /* --- 垂直方向揃え --- */
+  .flex-a-start {
+    align-items: flex-start;
+  }
+  .flex-a-end {
+    align-items: flex-end;
+  }
+  .flex-a-ctr {
+    align-items: center;
+  }
+  .flex-a-baseline {
+    align-items: baseline;
+  }
+  .flex-a-stretch {
+    align-items: stretch;
+  }
+
+  /* --- 子要素の折り返し設定 --- */
+  .flex-c-nowrap {
+    flex-wrap: nowrap;
+  }
+  .flex-c-wrap {
+    flex-wrap: wrap;
+  }
+
+  /* --- 子要素の複数行設定 --- */
+  .flex-c-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .flex-c-start {
+    align-content: flex-start;
+  }
+  .flex-c-start {
+    align-content: flex-start;
+  }
+  .flex-c-end {
+    align-content: flex-end;
+  }
+  .flex-c-ctr {
+    align-content: center;
+  }
+  .flex-c-baseline {
+    align-content: baseline;
+  }
+  .flex-c-stretch {
+    align-content: stretch;
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* --- 縦並び - sp --- */
+    .flex-sp-block {
+      flex-direction: column;
+    }
+  }
+
+/* txt
+**************************************** */
+  .txt-ctr,
+  .txt-ctr-pc {
+    text-align: center;
+  }
+  .txt-rgt,
+  .txt-rgt-pc {
+    text-align: right;
+  }
+
+  @media screen and (max-width: 767px) {
+    .txt-ctr-pc,
+    .txt-rgt-pc { text-align: left; }
+  }
